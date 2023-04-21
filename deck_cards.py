@@ -17,3 +17,9 @@ for alf_num in alpha_numeric:
 # print order by alpha_numeric
 for i in range(0, 40, 4):
     print(f'{deck[i]} {deck[i+1]} {deck[i+2]} {deck[i+3]}')
+
+# Beautifull print deck
+for i in range(0, 40, 4):
+    for j in range(4):
+        print('{:16}'.format(deck[i+j]), end='')
+    print()
